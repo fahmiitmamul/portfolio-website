@@ -16,6 +16,30 @@
   }
 }
 
+.animate-on-hover {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+.animate-on-hover::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+
+.animate-on-hover:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
