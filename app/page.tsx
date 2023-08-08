@@ -25,6 +25,7 @@ import { Steps } from "antd";
 import Eventific from "../public/eventific.png";
 import CoffeeShop from "../public/coffeshop.png";
 import Wallet from "../public/wallet.png";
+import { Twirl as Hamburger } from "hamburger-react";
 
 export default function Homepage(): JSX.Element {
   const text =
@@ -37,13 +38,13 @@ export default function Homepage(): JSX.Element {
   return (
     <ConfigProvider theme={theme}>
       <div className="App">
-        <div className="flex justify-between items-center w-full h-[70px] bg-white px-10 text-[#383838] fixed z-10">
+        <div className="flex justify-between items-center w-full h-[70px] bg-white px-10 text-[#383838]">
           <div>
             <p className="font-bold text-2xl uppercase tracking-widest animate-on-hover cursor-pointer">
               portfolio
             </p>
           </div>
-          <nav className="flex justify-center items-center gap-10">
+          <nav className="md:flex justify-center items-center gap-10 hidden">
             <ul className="flex gap-10">
               <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
                 <Link href="/#about-me">About</Link>
@@ -56,23 +57,26 @@ export default function Homepage(): JSX.Element {
               </li>
             </ul>
           </nav>
+          <div className="md:hidden">
+            <Hamburger />
+          </div>
         </div>
-        <div className="flex w-full h-[800px] bg-gradient-to-tr from-blue-300 via-white to-orange-300">
+        <div className="flex w-full flex-col justify-center items-center md:flex-row h-[800px] bg-gradient-to-tr from-blue-300 via-white to-orange-300 pt-0">
           <div
             data-aos="fade-right"
-            className="flex flex-auto w-64 flex-col text-[#383838] justify-center items-center"
+            className="flex flex-auto md:w-64 flex-col text-[#383838] justify-center items-center"
           >
-            <div className="flex flex-col max-w-2xl text-5xl font-black">
+            <div className="flex flex-col px-8 max-w-2xl text-3xl md:text-5xl font-black">
               <div>Hi 👋</div>
               <div>My name is Itmamul Fahmi</div>
-              <div className="flex gap-2 text-3xl">
+              <div className="flex gap-2 text-2xl">
                 <div>I&apos;m a</div> <Typewriter />
               </div>
             </div>
           </div>
           <div
             data-aos="fade-left"
-            className="flex-auto w-32 flex justify-center items-center"
+            className="flex-auto md:w-32 flex justify-center items-center"
           >
             <Image
               alt="fahmi"
@@ -87,7 +91,7 @@ export default function Homepage(): JSX.Element {
         >
           <div className="w-full flex flex-col justify-center items-center text-3xl pt-10">
             <div className="font-bold">About Me</div>
-            <div className="text-xl px-20 text-center py-5">
+            <div className="text-xl px-5 md:px-20 text-center py-5">
               I&apos;m a person who is interested in learning new things,
               especially in the field of programming. My background is in
               computer and network engineering, which I majored in during high
@@ -98,7 +102,7 @@ export default function Homepage(): JSX.Element {
               and professional person.
             </div>
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex flex-col md:flex-row gap-32 md:gap-0 justify-center items-center px-8">
             <div className="flex flex-col gap-10 flex-1 justify-center items-center">
               <div className="font-bold text-3xl">Education</div>
               <div className="max-w-xl">
@@ -142,12 +146,12 @@ export default function Homepage(): JSX.Element {
           </div>
           <div className="w-full flex flex-col justify-center items-center text-3xl pt-10 pb-5">
             <div className="font-bold pb-5">Skills</div>
-            <div className="text-xl px-20 text-center">
+            <div className="text-xl px-5 md:px-20 text-center">
               Here are some skills that I have mastered such as React.js,
               Next.js, Express.js and many more...
             </div>
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex flex-wrap justify-center items-center">
             <Image
               className="hover:scale-[1.1] cursor-pointer transition-all"
               width={130}
@@ -220,14 +224,14 @@ export default function Homepage(): JSX.Element {
             />
           </div>
         </div>
-        <div className="h-auto bg-blue-50 text-[#383838] px-20 py-20">
+        <div className="h-auto bg-blue-50 text-[#383838] px-5 md:px-20 py-20">
           <div className="w-full flex justify-center items-center text-3xl font-bold">
             Projects
           </div>
           <div className="text-xl text-center py-10">
             Here several projects that i developed
           </div>
-          <div className="w-full flex gap-14 justify-center items-center">
+          <div className="w-full flex flex-wrap gap-14 justify-center items-center">
             <div className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all">
               <Image src={Eventific} alt="Projects" width={500} />
               <div className="p-5">
@@ -270,8 +274,8 @@ export default function Homepage(): JSX.Element {
           </div>
         </div>
         <div className="flex justify-center items-center h-[700px] bg-gradient-to-tr from-blue-300 via-white to-orange-300 text-[#383838] py-10">
-          <div className="flex flex-col gap-10 justify-center items-center">
-            <div className="font-bold text-2xl">
+          <div className="flex flex-col gap-10 justify-center items-center text-center">
+            <div className="font-bold text-2xl max-w-sm md:max-w-none">
               You can reach out me by clicking link below, or just say hi to me
               :)
             </div>
