@@ -68,22 +68,16 @@ export default function Homepage(): JSX.Element {
           </div>
         </div>
         <div ref={mobileNav} className="box transform md:hidden">
-          <nav className="hidden" ref={navChildren}>
-            <ul className="flex flex-col gap-4 px-5">
+          <nav className="md:flex justify-center items-center gap-10 hidden">
+            <ul className="flex gap-10">
               <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
-                <Link href="/#about-me">About</Link>
-              </li>
-              <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
-                Projects
-              </li>
-              <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
-                Hire Me
-              </li>
-              <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
-                <div className="flex gap-2 items-center">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1BE6VvEl8a2smITrR4hNpnj6yPYCh5nak"
+                  className="flex gap-2 items-center justify-center"
+                >
                   Download CV
                   <IoMdDocument />
-                </div>
+                </a>
               </li>
             </ul>
           </nav>
