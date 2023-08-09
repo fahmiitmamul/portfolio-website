@@ -110,6 +110,7 @@ export default function Homepage(): JSX.Element {
           </div>
         </div>
         <div
+          data-aos="fade-right"
           className="flex flex-col gap-24 h-auto bg-white text-[#383838] py-10"
           id="about-me"
         >
@@ -251,6 +252,7 @@ export default function Homepage(): JSX.Element {
         <div
           className="h-auto bg-blue-50 text-[#383838] px-5 md:px-20 py-20"
           id="projects"
+          data-aos="fade-left"
         >
           <div className="w-full flex justify-center items-center text-3xl font-bold">
             Projects
@@ -329,7 +331,10 @@ export default function Homepage(): JSX.Element {
             </a>
           </div>
         </div>
-        <div className="flex justify-center items-center h-[700px] bg-gradient-to-tr from-blue-300 via-white to-orange-300 text-[#383838] py-10">
+        <div
+          data-aos="fade-right"
+          className="flex justify-center items-center h-[700px] bg-gradient-to-tr from-blue-300 via-white to-orange-300 text-[#383838] py-10"
+        >
           <div className="flex flex-col gap-10 justify-center items-center text-center">
             <div className="font-bold text-2xl max-w-sm md:max-w-none">
               You can reach out me by clicking link below, or just say hi to me
