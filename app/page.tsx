@@ -53,19 +53,13 @@ export default function Homepage(): JSX.Element {
           <nav className="md:flex justify-center items-center gap-10 hidden">
             <ul className="flex gap-10">
               <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
-                <Link href="/#about-me">About</Link>
-              </li>
-              <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
-                Projects
-              </li>
-              <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
-                Hire Me
-              </li>
-              <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
-                <div className="flex gap-2 items-center justify-center">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1BE6VvEl8a2smITrR4hNpnj6yPYCh5nak"
+                  className="flex gap-2 items-center justify-center"
+                >
                   Download CV
                   <IoMdDocument />
-                </div>
+                </a>
               </li>
             </ul>
           </nav>
@@ -73,7 +67,7 @@ export default function Homepage(): JSX.Element {
             <Hamburger size={25} />
           </div>
         </div>
-        <div ref={mobileNav} className="box transform">
+        <div ref={mobileNav} className="box transform md:hidden">
           <nav className="hidden" ref={navChildren}>
             <ul className="flex flex-col gap-4 px-5">
               <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
@@ -257,7 +251,10 @@ export default function Homepage(): JSX.Element {
             />
           </div>
         </div>
-        <div className="h-auto bg-blue-50 text-[#383838] px-5 md:px-20 py-20">
+        <div
+          className="h-auto bg-blue-50 text-[#383838] px-5 md:px-20 py-20"
+          id="projects"
+        >
           <div className="w-full flex justify-center items-center text-3xl font-bold">
             Projects
           </div>
@@ -265,7 +262,11 @@ export default function Homepage(): JSX.Element {
             Here several projects that i developed
           </div>
           <div className="w-full flex flex-wrap gap-14 justify-center items-center">
-            <div className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all">
+            <a
+              target="_blank"
+              href="https://eventific.netlify.app"
+              className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all"
+            >
               <Image src={Eventific} alt="Projects" width={500} />
               <div className="p-5">
                 <div className="text-xl font-bold">Eventific</div>
@@ -277,8 +278,12 @@ export default function Homepage(): JSX.Element {
                   UI.
                 </div>
               </div>
-            </div>
-            <div className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all">
+            </a>
+            <a
+              target="_blank"
+              href="https://roastville.netlify.app"
+              className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all"
+            >
               <Image src={CoffeeShop} alt="Projects" width={500} />
               <div className="p-5">
                 <div className="text-xl font-bold">Roastville</div>
@@ -290,8 +295,12 @@ export default function Homepage(): JSX.Element {
                   UI.
                 </div>
               </div>
-            </div>
-            <div className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all">
+            </a>
+            <a
+              target="_blank"
+              href="https://paywave-wallet.vercel.app"
+              className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all"
+            >
               <Image src={Wallet} alt="Projects" width={500} />
               <div className="p-5">
                 <div className="text-xl font-bold">Paywave</div>
@@ -303,8 +312,12 @@ export default function Homepage(): JSX.Element {
                   UI.
                 </div>
               </div>
-            </div>
-            <div className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all">
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/fahmiitmamul/Eventific-Mobile/releases/tag/1.0.0"
+              className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all"
+            >
               <Image src={EventificMobile} alt="Projects" width={500} />
               <div className="p-5">
                 <div className="text-xl font-bold">Eventific Mobile</div>
@@ -316,7 +329,7 @@ export default function Homepage(): JSX.Element {
                   UI.
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div className="flex justify-center items-center h-[700px] bg-gradient-to-tr from-blue-300 via-white to-orange-300 text-[#383838] py-10">
