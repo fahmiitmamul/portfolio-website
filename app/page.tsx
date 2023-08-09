@@ -68,12 +68,15 @@ export default function Homepage(): JSX.Element {
           </div>
         </div>
         <div ref={mobileNav} className="box transform md:hidden">
-          <nav className="md:flex justify-center items-center gap-10 hidden">
+          <nav
+            className="md:flex justify-center items-center gap-10 hidden"
+            ref={navChildren}
+          >
             <ul className="flex gap-10">
               <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
                 <a
                   href="https://drive.google.com/uc?export=download&id=1BE6VvEl8a2smITrR4hNpnj6yPYCh5nak"
-                  className="flex gap-2 items-center justify-center"
+                  className="flex gap-2 items-center justify-center pl-5"
                 >
                   Download CV
                   <IoMdDocument />
