@@ -2,8 +2,8 @@
 import React, { useEffect } from "react";
 import { ConfigProvider } from "antd";
 import theme from "../theme/themeConfig";
-import { AiOutlineInstagram } from "react-icons/ai";
 import { FaGithub, FaInstagram } from "react-icons/fa";
+import { IoMdDocument } from "react-icons/io";
 import Profile from "../public/fahmi.jpg";
 import { BsLinkedin } from "react-icons/bs";
 import Image from "next/image";
@@ -25,11 +25,17 @@ import { Steps } from "antd";
 import Eventific from "../public/eventific.png";
 import CoffeeShop from "../public/coffeshop.png";
 import Wallet from "../public/wallet.png";
-import { Twirl as Hamburger } from "hamburger-react";
+import EventificMobile from "../public/eventific_mobile.png";
+import Hamburger from "hamburger-react";
 
 export default function Homepage(): JSX.Element {
-  const text =
-    "Welcome to the Typewriter Effect! I am a fullstack developer, a frontend developer, and a backend developer.";
+  const mobileNav: any = React.useRef();
+  const navChildren: any = React.useRef();
+
+  function ShowNavbar() {
+    mobileNav.current.classList.toggle("transform-active");
+    navChildren.current.classList.toggle("hidden");
+  }
 
   useEffect(() => {
     AOS.init();
@@ -38,7 +44,7 @@ export default function Homepage(): JSX.Element {
   return (
     <ConfigProvider theme={theme}>
       <div className="App">
-        <div className="flex justify-between items-center w-full h-[70px] bg-white px-10 text-[#383838]">
+        <div className="flex justify-between items-center w-full h-[70px] bg-white px-5 sm:px:10  text-[#383838]">
           <div>
             <p className="font-bold text-2xl uppercase tracking-widest animate-on-hover cursor-pointer">
               portfolio
@@ -55,22 +61,49 @@ export default function Homepage(): JSX.Element {
               <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
                 Hire Me
               </li>
+              <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
+                <div className="flex gap-2 items-center justify-center">
+                  Download CV
+                  <IoMdDocument />
+                </div>
+              </li>
             </ul>
           </nav>
-          <div className="md:hidden">
-            <Hamburger />
+          <div className="md:hidden" onClick={ShowNavbar}>
+            <Hamburger size={25} />
           </div>
         </div>
-        <div className="flex w-full flex-col justify-center items-center md:flex-row h-[800px] bg-gradient-to-tr from-blue-300 via-white to-orange-300 pt-0">
+        <div ref={mobileNav} className="box transform">
+          <nav className="hidden" ref={navChildren}>
+            <ul className="flex flex-col gap-4 px-5">
+              <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
+                <Link href="/#about-me">About</Link>
+              </li>
+              <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
+                Projects
+              </li>
+              <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
+                Hire Me
+              </li>
+              <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
+                <div className="flex gap-2 items-center">
+                  Download CV
+                  <IoMdDocument />
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div className="flex w-full flex-col justify-center items-center md:flex-row h-[600px] bg-gradient-to-tr from-blue-300 via-white to-orange-300 pt-0">
           <div
             data-aos="fade-right"
             className="flex flex-auto md:w-64 flex-col text-[#383838] justify-center items-center"
           >
             <div className="flex flex-col px-8 max-w-2xl text-3xl md:text-5xl font-black">
-              <div>Hi 👋</div>
-              <div>My name is Itmamul Fahmi</div>
+              <div>Hi.</div>
+              <div>I&apos;m Itmamul Fahmi</div>
               <div className="flex gap-2 text-2xl">
-                <div>I&apos;m a</div> <Typewriter />
+                <div>A</div> <Typewriter />
               </div>
             </div>
           </div>
@@ -263,6 +296,19 @@ export default function Homepage(): JSX.Element {
               <div className="p-5">
                 <div className="text-xl font-bold">Paywave</div>
                 <div className="text-md">Role: Fullstack Developer</div>
+                <div className="text-md">
+                  Eventific is an event management application. In this app, you
+                  can find various events, and you have the option to purchase
+                  tickets for these events. It is built using React.js and Daisy
+                  UI.
+                </div>
+              </div>
+            </div>
+            <div className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all">
+              <Image src={EventificMobile} alt="Projects" width={500} />
+              <div className="p-5">
+                <div className="text-xl font-bold">Eventific Mobile</div>
+                <div className="text-md">Role: Mobile Developer</div>
                 <div className="text-md">
                   Eventific is an event management application. In this app, you
                   can find various events, and you have the option to purchase
