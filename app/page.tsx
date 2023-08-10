@@ -7,8 +7,6 @@ import { IoMdDocument } from "react-icons/io";
 import Profile from "../public/fahmi.jpg";
 import { BsLinkedin } from "react-icons/bs";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Link from "next/link";
 import Bootstrap from "../public/bootstrap5.svg";
 import Docker from "../public/docker.png";
@@ -36,10 +34,6 @@ export default function Homepage(): JSX.Element {
     mobileNav.current.classList.toggle("transform-active");
     navChildren.current.classList.toggle("hidden");
   }
-
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <ConfigProvider theme={theme}>
@@ -86,10 +80,7 @@ export default function Homepage(): JSX.Element {
           </nav>
         </div>
         <div className="flex w-full flex-col justify-center items-center md:flex-row h-[600px] bg-gradient-to-tr from-blue-300 via-white to-orange-300 pt-0">
-          <div
-            data-aos="fade-right"
-            className="flex flex-auto md:w-64 flex-col text-[#383838] justify-center items-center"
-          >
+          <div className="flex flex-auto md:w-64 flex-col text-[#383838] justify-center items-center">
             <div className="flex flex-col px-8 max-w-2xl text-3xl md:text-5xl font-black">
               <div>Hi.</div>
               <div>I&apos;m Itmamul Fahmi</div>
@@ -98,10 +89,7 @@ export default function Homepage(): JSX.Element {
               </div>
             </div>
           </div>
-          <div
-            data-aos="fade-left"
-            className="flex-auto md:w-32 flex justify-center items-center"
-          >
+          <div className="flex-auto md:w-32 flex justify-center items-center">
             <Image
               alt="fahmi"
               src={Profile}
@@ -110,7 +98,6 @@ export default function Homepage(): JSX.Element {
           </div>
         </div>
         <div
-          data-aos="fade-right"
           className="flex flex-col gap-24 h-auto bg-white text-[#383838] py-10"
           id="about-me"
         >
@@ -252,7 +239,6 @@ export default function Homepage(): JSX.Element {
         <div
           className="h-auto bg-blue-50 text-[#383838] px-5 md:px-20 py-20"
           id="projects"
-          data-aos="fade-left"
         >
           <div className="w-full flex justify-center items-center text-3xl font-bold">
             Projects
@@ -331,10 +317,7 @@ export default function Homepage(): JSX.Element {
             </a>
           </div>
         </div>
-        <div
-          data-aos="fade-right"
-          className="flex justify-center items-center h-[700px] bg-gradient-to-tr from-blue-300 via-white to-orange-300 text-[#383838] py-10"
-        >
+        <div className="flex justify-center items-center h-[700px] bg-gradient-to-tr from-blue-300 via-white to-orange-300 text-[#383838] py-10">
           <div className="flex flex-col gap-10 justify-center items-center text-center">
             <div className="font-bold text-2xl max-w-sm md:max-w-none">
               You can reach out me by clicking link below, or just say hi to me
