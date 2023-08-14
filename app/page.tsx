@@ -318,7 +318,7 @@ export default function Homepage(): JSX.Element {
             </a>
             <a
               target="_blank"
-              href="https://github.com/fahmiitmamul/Eventific-Mobile/releases/tag/1.0.0"
+              href="https://clickmedia.netlify.app"
               className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all"
             >
               <Image src={Clickmedia} alt="Projects" width={500} />
