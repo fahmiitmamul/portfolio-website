@@ -23,6 +23,7 @@ import { Steps } from "antd";
 import Eventific from "../public/eventific.png";
 import CoffeeShop from "../public/coffeshop.png";
 import Wallet from "../public/wallet.png";
+import Clickmedia from "../public/clickmedia.png";
 import EventificMobile from "../public/eventific_mobile.png";
 import Hamburger from "hamburger-react";
 
@@ -312,6 +313,23 @@ export default function Homepage(): JSX.Element {
                   can find various events, and you have the option to purchase
                   tickets for these events. It is built using React.js and Daisy
                   UI.
+                </div>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/fahmiitmamul/Eventific-Mobile/releases/tag/1.0.0"
+              className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all"
+            >
+              <Image src={Clickmedia} alt="Projects" width={500} />
+              <div className="p-5">
+                <div className="text-xl font-bold">Clickmedia News Portal</div>
+                <div className="text-md">Role: Fullstack Web Developer</div>
+                <div className="text-md">
+                  Clickmedianews is news portal app, built with Reactjs for
+                  making user interface, also Expressjs for making API, this app
+                  contains latest news, where user can read these news, like,
+                  comment and many more
                 </div>
               </div>
             </a>
