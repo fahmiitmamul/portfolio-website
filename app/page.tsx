@@ -5,7 +5,7 @@ import theme from "../theme/themeConfig";
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import { IoMdDocument } from "react-icons/io";
 import Profile from "../public/fahmi.jpg";
-import { BsLinkedin } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 import Bootstrap from "../public/bootstrap5.svg";
@@ -26,6 +26,7 @@ import Wallet from "../public/wallet.png";
 import Clickmedia from "../public/clickmedia.png";
 import EventificMobile from "../public/eventific_mobile.png";
 import Hamburger from "hamburger-react";
+import Aka from "../public/aka.png"
 
 export default function Homepage(): JSX.Element {
   const mobileNav: any = React.useRef();
@@ -49,7 +50,7 @@ export default function Homepage(): JSX.Element {
             <ul className="flex gap-10">
               <li className="text-lg font-bold cursor-pointer animate-on-hover overflow-auto">
                 <a
-                  href="https://drive.google.com/uc?export=download&id=1BE6VvEl8a2smITrR4hNpnj6yPYCh5nak"
+                  href="https://drive.google.com/file/d/1QBEzlfTIWwDpHEaVRdYM2nMU8GtyqucF/view"
                   className="flex gap-2 items-center justify-center"
                 >
                   Download CV
@@ -148,7 +149,7 @@ export default function Homepage(): JSX.Element {
                   direction="vertical"
                   items={[
                     {
-                      title: "Freelance Web Developer",
+                      title: "Fullstack Web Developer",
                       description: `Developed a fully functional website from scratch for a corporate client,
                         Customized existing websites to suit the unique needs of clients, Worked with a team to create a website mockup for a client`,
                     },
@@ -250,7 +251,7 @@ export default function Homepage(): JSX.Element {
           <div className="w-full flex flex-wrap gap-14 justify-center items-center">
             <a
               target="_blank"
-              href="https://eventific.netlify.app"
+              href="https://eventific.vercel.app"
               className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all"
             >
               <Image src={Eventific} alt="Projects" width={500} />
@@ -267,7 +268,7 @@ export default function Homepage(): JSX.Element {
             </a>
             <a
               target="_blank"
-              href="https://roastville.netlify.app"
+              href="https://roastville-shop.vercel.app"
               className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all"
             >
               <Image src={CoffeeShop} alt="Projects" width={500} />
@@ -301,7 +302,7 @@ export default function Homepage(): JSX.Element {
             </a>
             <a
               target="_blank"
-              href="https://github.com/fahmiitmamul/Eventific-Mobile/releases/tag/1.0.0"
+              href="https://github.com/fitmamul/Eventific-Mobile/releases/tag/1.0.0"
               className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all"
             >
               <Image src={EventificMobile} alt="Projects" width={500} />
@@ -318,7 +319,7 @@ export default function Homepage(): JSX.Element {
             </a>
             <a
               target="_blank"
-              href="https://clickmedia.netlify.app"
+              href="https://clickmedianews-frontend.vercel.app"
               className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all"
             >
               <Image src={Clickmedia} alt="Projects" width={500} />
@@ -333,45 +334,38 @@ export default function Homepage(): JSX.Element {
                 </div>
               </div>
             </a>
+            <a
+              target="_blank"
+              href="https://aka-frontend.vercel.app"
+              className="rounded-xl shadow-xl max-w-md cursor-pointer hover:scale-[1.05] transition-all"
+            >
+              <Image src={Aka} alt="Projects" width={500} />
+              <div className="p-5">
+                <div className="text-xl font-bold">Arya Kemuning Abadi Website</div>
+                <div className="text-md">Role: Fullstack Web Developer</div>
+                <div className="text-md">
+                Arya Kemuning Abadi is company profile website, this is a jobseeker and service provider website, where people can
+                find various positions of works and services. This app is built using Next.js
+                </div>
+              </div>
+            </a>
           </div>
         </div>
         <div className="flex justify-center items-center h-[700px] bg-gradient-to-tr from-blue-300 via-white to-orange-300 text-[#383838] py-10">
           <div className="flex flex-col gap-10 justify-center items-center text-center">
             <div className="font-bold text-2xl max-w-sm md:max-w-none">
-              You can reach out me by clicking link below, or just say hi to me
+              You can reach out me from email below, or just say hi to me
               :)
             </div>
             <Link
               className="flex gap-4 hover:scale-[1.1] transition-all"
-              href="https://www.linkedin.com/in/itmamulfahmi"
+              href="mailto:itmamul2004@gmail.com"
             >
               <div>
-                <BsLinkedin size={30} />
+                <MdEmail size={30} />
               </div>
               <div className="w-[100px]">
-                <div className="font-bold">Linkedin</div>
-              </div>
-            </Link>
-            <Link
-              className="flex gap-4 hover:scale-[1.1] transition-all"
-              href="https://www.github.com/fahmiitmamul"
-            >
-              <div>
-                <FaGithub size={30} />
-              </div>
-              <div className="w-[100px]">
-                <div className="font-bold">Github</div>
-              </div>
-            </Link>
-            <Link
-              className="flex gap-4 hover:scale-[1.1] transition-all"
-              href="https://www.instagram.com/fahmiitmamul"
-            >
-              <div>
-                <FaInstagram size={30} />
-              </div>
-              <div className="w-[100px]">
-                <div className="font-bold">Instagram</div>
+                <div className="font-bold">itmamul2004@gmail.com</div>
               </div>
             </Link>
           </div>
