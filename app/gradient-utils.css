@@ -1,0 +1,32 @@
+/* Gradient Text Utilities */
+.gradient-text {
+  @apply bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent;
+}
+
+.gradient-bg {
+  @apply bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600;
+}
+
+.gradient-border {
+  @apply border-2 border-transparent bg-clip-padding;
+  background-image: linear-gradient(to right, #f97316, #db2777, #9333ea);
+  background-origin: border-box;
+}
+
+/* Animated Gradient */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
