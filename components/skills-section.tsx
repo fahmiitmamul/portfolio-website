@@ -146,7 +146,7 @@ export function SkillsSection() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             whileHover={{ scale: 1.02 }}
           >
-            <div className="bg-gray-950 rounded-xl p-6 h-full backdrop-blur-sm transition-all duration-300 group-hover:bg-gray-900/40 group-hover:backdrop-blur-xl">
+            <div className="bg-[#121212] rounded-xl p-6 h-full backdrop-blur-sm transition-all duration-300 group-hover:bg-[#1a1a1a]/40 group-hover:backdrop-blur-xl">
               <div className="flex items-center gap-3 mb-4">
                 <div className={`p-3 rounded-lg ${category.iconBg}`}>
                   {category.icon}
@@ -157,7 +157,7 @@ export function SkillsSection() {
                 {category.skills.map((skill, skillIndex) => (
                   <span
                     key={skillIndex}
-                    className="px-3 py-1 bg-gray-900/70 backdrop-blur-sm rounded-full text-sm font-medium hover:bg-gray-800/60 hover:backdrop-blur-xl transition-all cursor-default hover:scale-105 transform duration-200"
+                    className="px-3 py-1 bg-[#1a1a1a]/70 backdrop-blur-sm rounded-full text-sm font-medium hover:bg-[#222222]/60 hover:backdrop-blur-xl transition-all cursor-default hover:scale-105 transform duration-200"
                   >
                     {skill}
                   </span>

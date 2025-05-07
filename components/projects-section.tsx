@@ -140,7 +140,7 @@ export function ProjectsSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <Card className="overflow-hidden h-full border border-gray-800 bg-gray-950/50 backdrop-blur-sm group hover:bg-gray-900/30 hover:backdrop-blur-xl hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
+            <Card className="overflow-hidden h-full border border-gray-800 bg-[#121212]/50 backdrop-blur-sm group hover:bg-[#1a1a1a]/30 hover:backdrop-blur-xl hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
               <div className="relative aspect-video group">
                 <Image
                   src={project.image || "/placeholder.svg"}
@@ -148,7 +148,7 @@ export function ProjectsSection() {
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-950 to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#121212] to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
                 <div className="absolute bottom-4 left-4 right-4 flex justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <Button
                     size="sm"
@@ -185,7 +185,7 @@ export function ProjectsSection() {
                       {project.description}
                     </CardDescription>
                   </div>
-                  <span className="text-xs px-2 py-1 rounded-full bg-gray-800">
+                  <span className="text-xs px-2 py-1 rounded-full bg-[#1a1a1a]">
                     {project.category}
                   </span>
                 </div>
@@ -195,7 +195,7 @@ export function ProjectsSection() {
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
-                      className="px-2 py-1 bg-gray-900 rounded-full text-xs font-medium"
+                      className="px-2 py-1 bg-[#1a1a1a] rounded-full text-xs font-medium"
                     >
                       {tag}
                     </span>

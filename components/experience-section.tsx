@@ -81,7 +81,7 @@ export function ExperienceSection() {
 
               {/* Card */}
               <div className="w-full md:w-5/12 mb-8 md:mb-0">
-                <Card className="overflow-hidden border border-gray-800 bg-gray-950/50 backdrop-blur-sm hover:bg-gray-900/30 hover:backdrop-blur-xl hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
+                <Card className="overflow-hidden border border-gray-800 bg-[#121212]/50 backdrop-blur-sm hover:bg-[#1a1a1a]/30 hover:backdrop-blur-xl hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300">
                   <CardHeader>
                     <div className="flex justify-between items-start">
                       <div>

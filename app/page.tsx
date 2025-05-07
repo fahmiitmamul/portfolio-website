@@ -56,7 +56,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
+    <div className="min-h-screen bg-[#121212] relative overflow-hidden">
       <BackgroundGradient />
 
       <Header activeSection={activeSection} />
