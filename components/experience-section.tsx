@@ -14,7 +14,7 @@ const experiences = [
   {
     title: "Fullstack Web & Mobile Develoer",
     company: "PT Radar Utama Nusantara Lapan",
-    period: "2021 - Present",
+    period: "2023 - 2024",
     description:
       "Developed and maintained multiple web applications for clients in various sectors.",
     achievements: [
@@ -25,7 +25,7 @@ const experiences = [
   {
     title: "Full-Stack Web & Mobile Developer",
     company: "PT Evolusi Sistem Digital",
-    period: "2018 - 2021",
+    period: "2024 - Present",
     description:
       "Developed and maintained multiple web applications for clients in various sectors.",
     achievements: [
@@ -119,22 +119,6 @@ export function ExperienceSection() {
           ))}
         </div>
       </div>
-
-      <motion.div
-        className="flex justify-center mt-12"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-      >
-        <a
-          href="#"
-          className="inline-flex items-center px-6 py-3 rounded-md border border-gray-800/30 bg-gradient-to-r from-orange-500/10 to-purple-600/10 backdrop-blur-md hover:from-orange-500/20 hover:to-purple-600/20 hover:backdrop-blur-xl text-white shadow-sm transition-all duration-300"
-        >
-          <GraduationCap className="mr-2 h-5 w-5" />
-          View Full Resume
-        </a>
-      </motion.div>
     </section>
   );
 }
