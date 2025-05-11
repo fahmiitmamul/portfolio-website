@@ -34,6 +34,22 @@ const projects = [
     githubUrl: "#",
   },
   {
+    title: "Lookit HRIS",
+    description:
+      "An all-in-one platform to manage employee data, payroll, attendance, and HR tasks efficiently.",
+    image: "/lookit-hris.png",
+    tags: [
+      "Next.js",
+      "Tailwind CSS",
+      "Express.js",
+      "PostgreSQL",
+      "Sequelize ORM",
+    ],
+    category: "Dashboard",
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+  {
     title: "Arya Kemuning Abadi",
     description: "A company profile website of AKA.",
     image: "/arya-kemuning-abadi.png",

@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function Header({ activeSection }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,110 +39,113 @@ export function Header({ activeSection }) {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 w-full flex justify-center items-center py-4">
-      <div className="bg-[#121212]/80 backdrop-blur-md rounded-full px-6 py-2 flex items-center justify-between max-w-4xl w-full">
-        {/* Logo */}
-        <Link href="/" className="flex items-center">
-          <div className="relative w-8 h-8">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-full h-full"
-            >
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z"
-                fill="#FF4500"
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+    >
+      <header className="fixed top-0 left-0 right-0 z-40 w-full flex justify-center items-center py-4">
+        <div className="bg-[#121212]/80 backdrop-blur-md rounded-full px-6 py-2 flex items-center justify-between max-w-4xl w-full">
+          {/* Logo */}
+          <Link href="/" className="flex items-center">
+            <div className="relative w-8 h-8 rounded-full overflow-hidden">
+              <Image
+                src="/logo.png"
+                alt="Profile"
+                width={500}
+                height={500}
+                className="object-cover"
               />
-            </svg>
-          </div>
-        </Link>
-
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
-          <nav className="flex items-center gap-6">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`text-sm font-medium transition-colors hover:text-orange-500 relative ${
-                  activeSection === item.href.substring(1)
-                    ? "text-orange-500"
-                    : "text-white"
-                }`}
-                onClick={() => handleNavClick(item.href.substring(1))}
-              >
-                {item.label}
-                {activeSection === item.href.substring(1) && (
-                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-orange-500"></span>
-                )}
-              </Link>
-            ))}
-          </nav>
-          <Link
-            href="#"
-            className="bg-gradient-to-r from-orange-600 to-purple-600 hover:from-orange-700 hover:to-purple-700 text-white px-4 py-1.5 rounded-md flex items-center gap-1.5 transition-all"
-          >
-            <FileText className="h-4 w-4" />
-            Resume
-          </Link>
-        </div>
-
-        {/* Mobile Navigation */}
-        <div className="flex md:hidden items-center gap-2">
-          <Link
-            href="#"
-            className="bg-gradient-to-r from-orange-600 to-purple-600 hover:from-orange-700 hover:to-purple-700 text-white px-3 py-1 rounded-md flex items-center gap-1 transition-all text-sm"
-          >
-            <FileText className="h-3.5 w-3.5" />
-            Resume
-          </Link>
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-white"
-          >
-            <Menu className="h-5 w-5" />
-            <span className="sr-only">Toggle menu</span>
-          </Button>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm md:hidden">
-          <div className="container py-4">
-            <div className="flex justify-end mb-8">
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={() => setIsMenuOpen(false)}
-                className="text-white"
-              >
-                <X className="h-6 w-6" />
-                <span className="sr-only">Close menu</span>
-              </Button>
             </div>
-            <nav className="flex flex-col gap-6 items-center text-lg">
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-8">
+            <nav className="flex items-center gap-6">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`font-medium transition-colors ${
+                  className={`text-sm font-medium transition-colors hover:text-orange-500 relative ${
                     activeSection === item.href.substring(1)
                       ? "text-orange-500"
-                      : "text-white hover:text-orange-500"
+                      : "text-white"
                   }`}
                   onClick={() => handleNavClick(item.href.substring(1))}
                 >
                   {item.label}
+                  {activeSection === item.href.substring(1) && (
+                    <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-orange-500"></span>
+                  )}
                 </Link>
               ))}
             </nav>
+            <Link
+              href="#"
+              className="bg-gradient-to-r from-orange-600 to-purple-600 hover:from-orange-700 hover:to-purple-700 text-white px-4 py-1.5 rounded-md flex items-center gap-1.5 transition-all"
+            >
+              <FileText className="h-4 w-4" />
+              Resume
+            </Link>
+          </div>
+
+          {/* Mobile Navigation */}
+          <div className="flex md:hidden items-center gap-2">
+            <Link
+              href="#"
+              className="bg-gradient-to-r from-orange-600 to-purple-600 hover:from-orange-700 hover:to-purple-700 text-white px-3 py-1 rounded-md flex items-center gap-1 transition-all text-sm"
+            >
+              <FileText className="h-3.5 w-3.5" />
+              Resume
+            </Link>
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-white"
+            >
+              <Menu className="h-5 w-5" />
+              <span className="sr-only">Toggle menu</span>
+            </Button>
           </div>
         </div>
-      )}
-    </header>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm md:hidden">
+            <div className="container py-4">
+              <div className="flex justify-end mb-8">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="text-white"
+                >
+                  <X className="h-6 w-6" />
+                  <span className="sr-only">Close menu</span>
+                </Button>
+              </div>
+              <nav className="flex flex-col gap-6 items-center text-lg">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`font-medium transition-colors ${
+                      activeSection === item.href.substring(1)
+                        ? "text-orange-500"
+                        : "text-white hover:text-orange-500"
+                    }`}
+                    onClick={() => handleNavClick(item.href.substring(1))}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+          </div>
+        )}
+      </header>
+    </motion.div>
   );
 }
