@@ -23,7 +23,7 @@ const experiences = [
     ],
   },
   {
-    title: "Full-Stack Web & Mobile Developer",
+    title: "Fullstack Web & Mobile Developer",
     company: "PT Evolusi Sistem Digital",
     period: "2024 - Present",
     description:
