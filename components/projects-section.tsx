@@ -16,7 +16,7 @@ import {
 
 const projects = [
   {
-    title: "HJOBS ERP",
+    title: "H-Jobs ERP",
     description: "All-in-One ERP for Smarter Business.",
     image: "/hjobs-erp.png",
     tags: [
@@ -50,7 +50,7 @@ const projects = [
     githubUrl: "#",
   },
   {
-    title: "Arya Kemuning Abadi",
+    title: "AKA Company Profile",
     description: "A company profile website of AKA.",
     image: "/arya-kemuning-abadi.png",
     tags: [
