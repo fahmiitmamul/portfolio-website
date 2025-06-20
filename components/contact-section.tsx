@@ -1,9 +1,7 @@
 "use client";
-
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
-
+import { Mail, MapPin, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -61,7 +59,7 @@ export function ContactSection() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
             Get In Touch
           </h2>
-          <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+          <p className="mx-auto max-w-[700px]  md:text-xl">
             Have a project in mind or want to chat? Feel free to reach out!
           </p>
         </div>
@@ -86,7 +84,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <p className="text-muted-foreground">mail@itmamulfahmi.com</p>
+                  <p>mail@itmamulfahmi.com</p>
                 </div>
               </div>
 
@@ -96,18 +94,14 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-medium">Location</h3>
-                  <p className="text-muted-foreground">Banyumas, Indonesia</p>
+                  <p>Banyumas, Indonesia</p>
                 </div>
               </div>
 
               <div className="mt-8 p-4 rounded-lg bg-gray-900/50 border border-gray-800">
                 <h3 className="font-medium mb-2">Working Hours</h3>
-                <p className="text-muted-foreground">
-                  Monday - Friday: 9AM - 5PM
-                </p>
-                <p className="text-muted-foreground">
-                  Weekend: Available for urgent matters
-                </p>
+                <p>Monday - Friday: 9AM - 5PM</p>
+                <p>Weekend: Available for urgent matters</p>
               </div>
             </CardContent>
           </Card>
