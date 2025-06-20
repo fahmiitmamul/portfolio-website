@@ -82,7 +82,8 @@ export function Header({ activeSection }) {
               ))}
             </nav>
             <Link
-              href="#"
+              href="/cv.pdf"
+              target="_blank"
               className="bg-gradient-to-r from-orange-600 to-purple-600 hover:from-orange-700 hover:to-purple-700 text-white px-4 py-1.5 rounded-md flex items-center gap-1.5 transition-all"
             >
               <FileText className="h-4 w-4" />
