@@ -120,11 +120,11 @@ export function ProjectsSection() {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <div className="space-y-2">
+        <div className="space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
             My Projects
           </h2>
-          <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+          <p className="mx-auto max-w-[700px] md:text-xl">
             Check out some of my recent work
           </p>
         </div>

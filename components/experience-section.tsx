@@ -51,7 +51,7 @@ export function ExperienceSection() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
             My Experience
           </h2>
-          <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+          <p className="mx-auto max-w-[700px] md:text-xl">
             My professional journey and career highlights
           </p>
         </div>
@@ -90,7 +90,7 @@ export function ExperienceSection() {
                           {exp.company}
                         </CardDescription>
                       </div>
-                      <div className="flex items-center text-sm text-muted-foreground">
+                      <div className="flex items-center text-sm">
                         <Calendar className="mr-1 h-4 w-4" />
                         {exp.period}
                       </div>

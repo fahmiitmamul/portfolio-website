@@ -22,7 +22,7 @@ export function AboutSection() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
               About Me
             </h2>
-            <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+            <p className="mx-auto max-w-[700px]  md:text-xl">
               Get to know me and my background
             </p>
           </div>
@@ -38,18 +38,18 @@ export function AboutSection() {
         <div className="grid grid-cols-1 gap-8 items-center justify-center text-left">
           <div className="space-y-2">
             <h3 className="text-2xl font-bold text-center">Who am I?</h3>
-            <p className="text-muted-foreground">
+            <p>
               I'm a passionate full-stack developer with a strong foundation in
               web technologies. I enjoy creating elegant solutions to complex
               problems and have experience working with various technologies
               across the stack.
             </p>
-            <p className="text-muted-foreground">
+            <p>
               With a background in several years of industry experience, I've
               worked on projects ranging from small business websites to
               large-scale enterprise applications.
             </p>
-            <p className="text-muted-foreground">
+            <p>
               When I'm not coding, you can find me listening music, reading, or
               experimenting with new technologies to expand my skill set.
             </p>
@@ -68,7 +68,7 @@ export function AboutSection() {
             <CardContent className="p-6 space-y-2">
               <CodeIcon />
               <h3 className="text-xl font-bold">Fullstack Development</h3>
-              <p className="text-muted-foreground">
+              <p>
                 Building complete applications from front-end to back-end with a
                 focus on scalability and performance.
               </p>
@@ -86,7 +86,7 @@ export function AboutSection() {
             <CardContent className="p-6 space-y-2">
               <Server />
               <h3 className="text-xl font-bold">Backend Architecture</h3>
-              <p className="text-muted-foreground">
+              <p>
                 Designing robust and scalable server systems with optimized
                 database structures.
               </p>
@@ -104,7 +104,7 @@ export function AboutSection() {
             <CardContent className="p-6 space-y-2">
               <Lightbulb />
               <h3 className="text-xl font-bold">Problem Solving</h3>
-              <p className="text-muted-foreground">
+              <p>
                 Tackling complex technical challenges with innovative and
                 efficient solutions.
               </p>
@@ -122,7 +122,7 @@ export function AboutSection() {
             <CardContent className="p-6 space-y-2">
               <Users />
               <h3 className="text-xl font-bold">Collaboration</h3>
-              <p className="text-muted-foreground">
+              <p>
                 Tackling complex technical challenges with innovative and
                 efficient solutions.
               </p>

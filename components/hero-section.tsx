@@ -19,8 +19,8 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="inline-block px-4 py-1.5 rounded-full text-sm font-medium bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 text-white mb-2 mx-auto md:mx-0">
-            Full-stack Software Engineer
+          <div className="w-64 px-4 py-1.5 rounded-full text-sm font-medium bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 text-white mb-2 mx-auto md:mx-0">
+            Fullstack Software Engineer
           </div>
 
           <div className="space-y-2">
@@ -30,7 +30,7 @@ export function HeroSection() {
                 Digital Experiences
               </span>
             </h1>
-            <p className="text-muted-foreground md:text-xl max-w-[600px] mx-auto md:mx-0">
+            <p className="md:text-xl max-w-[600px] mx-auto md:mx-0">
               I transform complex problems into elegant solutions. Specializing
               in full-stack development with expertise across the entire
               development lifecycle.
