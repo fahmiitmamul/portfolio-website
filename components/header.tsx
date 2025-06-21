@@ -94,7 +94,8 @@ export function Header({ activeSection }) {
           {/* Mobile Navigation */}
           <div className="flex md:hidden items-center gap-2">
             <Link
-              href="#"
+              href="/cv.pdf"
+              target="_blank"
               className="bg-gradient-to-r from-orange-600 to-purple-600 hover:from-orange-700 hover:to-purple-700 text-white px-3 py-1 rounded-md flex items-center gap-1 transition-all text-sm"
             >
               <FileText className="h-3.5 w-3.5" />
