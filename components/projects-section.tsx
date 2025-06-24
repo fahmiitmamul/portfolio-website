@@ -30,8 +30,7 @@ const projects = [
       "Kubernetes",
     ],
     category: "Dashboard",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://hjobserp.itmamulfahmi.com",
   },
   {
     title: "Lookit HRIS",
@@ -46,8 +45,7 @@ const projects = [
       "Sequelize ORM",
     ],
     category: "Dashboard",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://lookithris.itmamulfahmi.com",
   },
   {
     title: "AKA Company Profile",
@@ -61,8 +59,7 @@ const projects = [
       "Sequelize ORM",
     ],
     category: "Company Profile",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://aka.itmamulfahmi.com",
   },
   {
     title: "Mitracloudhost",
@@ -70,8 +67,7 @@ const projects = [
     image: "/mitracloudhosting.png",
     tags: ["Next.js", "Tailwind CSS", "Third Party Payment Gateway"],
     category: "Company Profile",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://mitracloudhost.itmamulfahmi.com",
   },
   {
     title: "Evosist Parking",
@@ -79,8 +75,7 @@ const projects = [
     image: "/evosist-parking.png",
     tags: ["Next.js", "Sequelize.js", "Tailwind CSS", "Express.js"],
     category: "Dashboard",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://evolusipark.itmamulfahmi.com",
   },
   {
     title: "Darul Hikam TPQ",
@@ -94,8 +89,7 @@ const projects = [
       "Express.js",
     ],
     category: "Dashboard",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://darulhikam.itmamulfahmi.com",
   },
 ];
 
@@ -164,8 +158,19 @@ export function ProjectsSection() {
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#121212] to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
+
+                <div className="absolute inset-0 bg-gradient-to-t from-[#121212] to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300" />
+
+                <Link
+                  href={project.liveUrl}
+                  target="_blank"
+                  className="absolute top-2 right-2 z-10 flex items-center gap-1 bg-black/60 text-white px-3 py-1 rounded-md hover:bg-black/80"
+                >
+                  <ExternalLink size={18} />
+                  <span className="text-sm">Live Demo</span>
+                </Link>
               </div>
+
               <CardHeader>
                 <div className="flex justify-between items-start">
                   <div>
@@ -191,12 +196,7 @@ export function ProjectsSection() {
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="flex justify-between">
-                <Button variant="ghost" size="sm" className="gap-1">
-                  <Code className="h-4 w-4" />
-                  Details
-                </Button>
-              </CardFooter>
+              <CardFooter className="flex justify-between"></CardFooter>
             </Card>
           </motion.div>
         ))}
