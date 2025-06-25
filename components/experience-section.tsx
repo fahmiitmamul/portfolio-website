@@ -12,7 +12,7 @@ import {
 
 const experiences = [
   {
-    title: "Fullstack Web & Mobile Develoer",
+    title: "Fullstack Web & Mobile Developer",
     company: "PT Radar Utama Nusantara Lapan",
     period: "2023 - 2024",
     description:
