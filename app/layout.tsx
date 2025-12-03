@@ -14,7 +14,7 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio Website",
+  title: "Itmmaul Fahmi | Fullstack Developer",
   description: "Portfolio Website Itmamul Fahmi",
 };
 
