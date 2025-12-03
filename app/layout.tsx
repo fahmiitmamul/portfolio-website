@@ -25,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="msvalidate.01" content="54D1F98FA5B361E3DFA04EB82B65A731" />
+      </head>
       <body className={`${OpenSans.variable} ${raleway.variable} antialiased`}>
         {children}
       </body>
