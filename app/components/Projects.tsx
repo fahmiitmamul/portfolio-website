@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState("ALL");
@@ -12,6 +13,7 @@ export default function Projects() {
       category: "ALL",
       image:
         "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662813/hjobs-erp_qxcxf1.png",
+      link: "https://hjobs-root-frontend.onrender.com/",
       tags: ["WEB-APP"],
     },
     {
@@ -20,6 +22,7 @@ export default function Projects() {
       category: "ALL",
       image:
         "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662813/lookit-hris_gpgkrx.png",
+      link: "https://lookithris.itmamulfahmi.com/",
       tags: ["WEB-APP"],
     },
     {
@@ -28,6 +31,7 @@ export default function Projects() {
       category: "ALL",
       image:
         "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662813/arya-kemuning-abadi_qtblpa.png",
+      link: "https://aka.itmamulfahmi.com/",
       tags: ["WEB-APP"],
     },
     {
@@ -36,6 +40,7 @@ export default function Projects() {
       category: "ALL",
       image:
         "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662814/mitracloudhosting_u5kvtq.png",
+      link: "https://mitracloudhost.itmamulfahmi.com/",
       tags: ["PROJECT"],
     },
     {
@@ -44,6 +49,7 @@ export default function Projects() {
       category: "ALL",
       image:
         "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662813/evosist-parking_gjpo6k.png",
+      link: "https://mitracloudhost.itmamulfahmi.com/",
       tags: ["PROJECT"],
     },
     {
@@ -52,6 +58,7 @@ export default function Projects() {
       category: "ALL",
       image:
         "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662814/darul-hikam_muwune.png",
+      link: "https://darulhikam.itmamulfahmi.com/",
       tags: ["PROJECT"],
     },
   ];
@@ -109,7 +116,11 @@ export default function Projects() {
               key={project.id}
               className="group cursor-pointer transform transition hover:scale-105"
             >
-              <div className="relative overflow-hidden rounded mb-3 sm:mb-4 h-40 sm:h-48 md:h-56">
+              <Link
+                href={project.link}
+                target="_blank"
+                className="relative overflow-hidden rounded mb-3 sm:mb-4 h-40 sm:h-48 md:h-56"
+              >
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -118,7 +129,7 @@ export default function Projects() {
                   height={300}
                 />
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition" />
-              </div>
+              </Link>
               <h3 className="text-[#dee2e6] text-base sm:text-lg font-semibold text-center">
                 {project.title}
               </h3>
