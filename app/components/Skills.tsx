@@ -44,6 +44,14 @@ export default function Skills() {
           name: "React Native",
           logo: "https://res.cloudinary.com/dxnewldiy/image/upload/v1764668587/React_Native_Logo_x1cgbg.png",
         },
+        {
+          name: "Flutter",
+          logo: "https://res.cloudinary.com/dpeolbh0r/image/upload/v1764841237/icon_flutter_anyowd.png",
+        },
+        {
+          name: "Laravel",
+          logo: "https://res.cloudinary.com/dpeolbh0r/image/upload/v1764841681/laravel-logo_k35vdk.png",
+        },
       ],
     },
     {
