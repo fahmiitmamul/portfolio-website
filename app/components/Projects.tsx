@@ -13,7 +13,7 @@ export default function Projects() {
       title: "H-JOBS-ERP",
       category: "ALL",
       image:
-        "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765255320/erp_project_tiebmk.png",
+        "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765255320/erp_project.png",
       link: "https://hjobs-root-frontend.onrender.com/",
       tags: ["WEB-APP"],
     },
@@ -22,7 +22,7 @@ export default function Projects() {
       title: "Lookit HRIS",
       category: "ALL",
       image:
-        "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765254857/HRIS.png",
+        "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765255742/hris.png",
       link: "https://lookithris.itmamulfahmi.com/",
       tags: ["WEB-APP"],
     },
@@ -31,7 +31,7 @@ export default function Projects() {
       title: "AKA Company Profile",
       category: "ALL",
       image:
-        "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765257008/company_profile_wi8dyy.png",
+        "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765257008/company_profile.png",
       link: "https://aka.itmamulfahmi.com/",
       tags: ["WEB-APP"],
     },
@@ -40,7 +40,7 @@ export default function Projects() {
       title: "Mitracloudhost",
       category: "ALL",
       image:
-        "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765256160/mitracloudhost_xiakxe.png",
+        "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765256160/mitracloudhost.png",
       link: "https://mitracloudhost.itmamulfahmi.com/",
       tags: ["PROJECT"],
     },
@@ -49,7 +49,7 @@ export default function Projects() {
       title: "Evosist Parking System",
       category: "ALL",
       image:
-        "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765256648/evosist_parking_system_hszk7z.png",
+        "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765256648/evosist_parking_system.png",
       link: "https://mitracloudhost.itmamulfahmi.com/",
       tags: ["PROJECT"],
     },
