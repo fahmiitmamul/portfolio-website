@@ -2,10 +2,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion"; // Import Framer Motion
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Projects() {
-  const [activeFilter, setActiveFilter] = useState("ALL"); //
+  const [activeFilter, setActiveFilter] = useState("ALL");
 
   const projectsData = [
     {
@@ -22,7 +22,7 @@ export default function Projects() {
       title: "Lookit HRIS",
       category: "ALL",
       image:
-        "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662813/lookit-hris_gpgkrx.png", // [cite: 4]
+        "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662813/lookit-hris_gpgkrx.png",
       link: "https://lookithris.itmamulfahmi.com/",
       tags: ["WEB-APP"],
     },
@@ -38,7 +38,7 @@ export default function Projects() {
     {
       id: 4,
       title: "Mitracloudhost",
-      category: "ALL", // [cite: 5]
+      category: "ALL",
       image:
         "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662814/mitracloudhosting_u5kvtq.png",
       link: "https://mitracloudhost.itmamulfahmi.com/",
@@ -55,7 +55,7 @@ export default function Projects() {
     },
     {
       id: 6,
-      title: "Darul Hikam TPQ", // [cite: 6]
+      title: "Darul Hikam TPQ",
       category: "ALL",
       image:
         "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662814/darul-hikam_muwune.png",
@@ -64,7 +64,6 @@ export default function Projects() {
     },
   ];
 
-  // Logika Filter tetap sama [cite: 7, 8]
   const filteredProjects =
     activeFilter === "ALL"
       ? projectsData
@@ -77,7 +76,6 @@ export default function Projects() {
           PROJECTS
         </h2>
 
-        {/* Filter Buttons [cite: 10, 11] */}
         <div className="flex flex-wrap gap-2 sm:gap-4 mt-0 mb-8 sm:mb-12 font-raleway">
           {["ALL", "WEB-APP", "PROJECT"].map((category) => (
             <button
@@ -85,7 +83,7 @@ export default function Projects() {
               onClick={() => setActiveFilter(category)}
               className={`px-4 sm:px-6 py-2 rounded font-medium transition text-sm sm:text-base ${
                 activeFilter === category
-                  ? "bg-[#1c7d32] text-[#dee2e6]" // [cite: 11]
+                  ? "bg-[#1c7d32] text-[#dee2e6]"
                   : "bg-[#1b2732] text-[#dee2e6] hover:bg-[#3a4a5a]"
               }`}
             >
@@ -94,31 +92,30 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* Projects Grid dengan Animasi */}
         <motion.div
-          layout // Prop ajaib untuk animasi pergeseran layout otomatis
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8" //
+          layout
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8"
         >
           <AnimatePresence>
             {filteredProjects.map((project) => (
               <motion.div
-                layout // Memungkinkan kartu bergerak saat posisi berubah
-                initial={{ opacity: 0, scale: 0.8 }} // Animasi awal muncul
-                animate={{ opacity: 1, scale: 1 }} // Animasi saat diam
-                exit={{ opacity: 0, scale: 0.5 }} // Animasi saat hilang (difilter keluar)
+                layout
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.5 }}
                 transition={{ duration: 0.3 }}
                 key={project.id}
-                className="group cursor-pointer" // Hover scale dihapus di sini agar tidak bentrok dengan layout animation
+                className="group cursor-pointer"
               >
                 <Link
                   href={project.link}
-                  target="_blank" // [cite: 16]
+                  target="_blank"
                   className="relative block overflow-hidden rounded mb-3 sm:mb-4 h-40 sm:h-48 md:h-56"
                 >
                   <Image
                     src={project.image}
-                    alt={project.title} // [cite: 17]
-                    className="w-full h-full object-cover group-hover:scale-110 transition duration-500" // Pindahkan efek zoom gambar ke sini
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                     width={300}
                     height={300}
                   />
