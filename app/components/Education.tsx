@@ -56,7 +56,7 @@ export default function Education() {
                   <h3 className="text-[#dee2e6] text-base sm:text-lg font-semibold italic mb-2">
                     {edu.degree}
                   </h3>
-                  <p className="text-[#12d640] font-small mb-1">{edu.period}</p>
+                  {/* <p className="text-[#12d640] font-small mb-1">{edu.period}</p> */}
                   <p className="text-[#dee2e6] text-sm mb-4">
                     {edu.university}
                   </p>
