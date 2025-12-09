@@ -10,10 +10,10 @@ export default function Projects() {
   const projectsData = [
     {
       id: 1,
-      title: "HJOBS ERP",
+      title: "H-JOBS-ERP",
       category: "ALL",
       image:
-        "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662813/hjobs-erp_qxcxf1.png",
+        "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765255320/erp_project_tiebmk.png",
       link: "https://hjobs-root-frontend.onrender.com/",
       tags: ["WEB-APP"],
     },
@@ -22,7 +22,7 @@ export default function Projects() {
       title: "Lookit HRIS",
       category: "ALL",
       image:
-        "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662813/lookit-hris_gpgkrx.png",
+        "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765254857/HRIS.png",
       link: "https://lookithris.itmamulfahmi.com/",
       tags: ["WEB-APP"],
     },
@@ -31,7 +31,7 @@ export default function Projects() {
       title: "AKA Company Profile",
       category: "ALL",
       image:
-        "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662813/arya-kemuning-abadi_qtblpa.png",
+        "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765257008/company_profile_wi8dyy.png",
       link: "https://aka.itmamulfahmi.com/",
       tags: ["WEB-APP"],
     },
@@ -40,7 +40,7 @@ export default function Projects() {
       title: "Mitracloudhost",
       category: "ALL",
       image:
-        "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662814/mitracloudhosting_u5kvtq.png",
+        "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765256160/mitracloudhost_xiakxe.png",
       link: "https://mitracloudhost.itmamulfahmi.com/",
       tags: ["PROJECT"],
     },
@@ -49,7 +49,7 @@ export default function Projects() {
       title: "Evosist Parking System",
       category: "ALL",
       image:
-        "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662813/evosist-parking_gjpo6k.png",
+        "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765256648/evosist_parking_system_hszk7z.png",
       link: "https://mitracloudhost.itmamulfahmi.com/",
       tags: ["PROJECT"],
     },
@@ -58,7 +58,7 @@ export default function Projects() {
       title: "Darul Hikam TPQ",
       category: "ALL",
       image:
-        "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662814/darul-hikam_muwune.png",
+        "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765256841/tpq_ki3koe.png",
       link: "https://darulhikam.itmamulfahmi.com/",
       tags: ["PROJECT"],
     },
@@ -110,16 +110,16 @@ export default function Projects() {
                 <Link
                   href={project.link}
                   target="_blank"
-                  className="relative block overflow-hidden rounded mb-3 sm:mb-4 h-40 sm:h-48 md:h-56"
+                  className="relative block overflow-hidden mb-3 sm:mb-4 h-40 sm:h-48 md:h-56"
                 >
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                    width={300}
-                    height={300}
+                    className="w-full h-full object-cover"
+                    width={1000}
+                    height={1000}
                   />
-                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition" />
+                  <div className="absolute inset-0 bg-black opacity-0 transition" />
                 </Link>
                 <h3 className="text-[#dee2e6] text-base sm:text-lg font-semibold text-center">
                   {project.title}
