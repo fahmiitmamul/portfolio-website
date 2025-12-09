@@ -7,7 +7,7 @@ export default function Education() {
     {
       id: 1,
       logo: "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765253846/Indonesia%20Open%20University%20Logo.png",
-      university: "Universitas Terbuka",
+      university: "Indonesia Open University",
       degree: "Bachelor of Engineering in Data Science",
       period: "2025 - 2028",
       coursework: [
