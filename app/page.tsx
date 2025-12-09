@@ -138,7 +138,8 @@ export default function Home() {
             Skills
           </Link>
           <Link
-            href="/resume"
+            href="https://1drv.ms/b/c/966a5f6043e7d119/IQBc28f9YUSWT6Jj_zJnCzUGAbUwO2PefuB9kPM5FUmDaBY?e=ws8gZX"
+            target="_blank"
             className={`nav-link ${
               isActive("/resume")
                 ? "active text-[#12d640]"
