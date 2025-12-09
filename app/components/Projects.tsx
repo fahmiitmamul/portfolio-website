@@ -10,7 +10,7 @@ export default function Projects() {
   const projectsData = [
     {
       id: 1,
-      title: "H-JOBS-ERP",
+      title: "HJOBS ERP",
       category: "ALL",
       image:
         "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765255320/erp_project.png",
@@ -19,7 +19,7 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: "Lookit HRIS",
+      title: "LOOKIT HRIS",
       category: "ALL",
       image:
         "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765255742/hris.png",
@@ -107,6 +107,9 @@ export default function Projects() {
                 key={project.id}
                 className="group cursor-pointer"
               >
+                <h3 className="text-[#dee2e6] text-xl font-bold pb-3 text-center">
+                  {project.title}
+                </h3>
                 <Link
                   href={project.link}
                   target="_blank"
@@ -116,14 +119,11 @@ export default function Projects() {
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover"
-                    width={1000}
-                    height={1000}
+                    width={500}
+                    height={500}
                   />
                   <div className="absolute inset-0 bg-black opacity-0 transition" />
                 </Link>
-                <h3 className="text-[#dee2e6] text-base sm:text-lg font-semibold text-center">
-                  {project.title}
-                </h3>
               </motion.div>
             ))}
           </AnimatePresence>
