@@ -6,7 +6,7 @@ export default function Education() {
   const educationData = [
     {
       id: 1,
-      logo: "https://res.cloudinary.com/dxnewldiy/image/upload/v1764662118/logo-ut-small-transparent_z2n5vo.png",
+      logo: "https://res.cloudinary.com/dpeolbh0r/image/upload/v1765253846/Indonesia%20Open%20University%20Logo.png",
       university: "Universitas Terbuka",
       degree: "Bachelor of Engineering in Data Science",
       period: "2025 - 2028",
