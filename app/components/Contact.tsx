@@ -29,9 +29,7 @@ export default function Contact() {
               >
                 <FaMapMarkerAlt className="text-[#ffffff] text-lg sm:text-xl" />
               </Link>
-              <h3 className="text-[#28a745] text-base sm:text-lg font-black">
-                My Address
-              </h3>
+              <h3 className="text-[#28a745] text-xl font-black">My Address</h3>
             </div>
             <p className="text-[#dee2e6] text-sm sm:text-base">Pekuncen</p>
             <p className="text-[#dee2e6] text-sm sm:text-base">
@@ -49,7 +47,7 @@ export default function Contact() {
               >
                 <FaShare className="text-[#ffffff] text-lg sm:text-xl" />
               </Link>
-              <h3 className="text-[#28a745] text-base sm:text-lg font-black">
+              <h3 className="text-[#28a745] text-xl font-black">
                 Social Profiles
               </h3>
             </div>
@@ -88,9 +86,7 @@ export default function Contact() {
               >
                 <FaEnvelope className="text-[#ffffff] text-lg sm:text-xl" />
               </Link>
-              <h3 className="text-[#28a745] text-base sm:text-lg font-black">
-                Email
-              </h3>
+              <h3 className="text-[#28a745] text-xl font-black">Email</h3>
             </div>
             <Link
               href="mailto:itmamulfahmi@outlook.co.id"
@@ -110,9 +106,7 @@ export default function Contact() {
               >
                 <FaPhone className="text-[#ffffff] text-lg sm:text-xl" />
               </Link>
-              <h3 className="text-[#28a745] text-base sm:text-lg font-black">
-                Contact
-              </h3>
+              <h3 className="text-[#28a745] text-xl font-black">Contact</h3>
             </div>
             <Link
               href="tel:+628976810795"
