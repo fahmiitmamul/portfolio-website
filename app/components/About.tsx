@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className="px-4 md:px-8 lg:px-48 py-4 font-opensans">
       <div className="mb-0">
-        <h2 className="text-[#dee2e6] text-lg md:text-xl font-small mb-6 pb-3 border-b border-[#dee2e6] inline-block tracking-widest">
+        <h2 className="text-[#dee2e6] text-sm font-black mb-6 pb-1 border-b border-[#dee2e6] inline-block tracking-widest">
           ABOUT
         </h2>
 
@@ -72,7 +72,7 @@ export default function About() {
 
       {/* Interests Section */}
       <div className="mt-8">
-        <h2 className="text-[#dee2e6] text-lg md:text-xl font-small mb-6 pb-3 border-b border-[#dee2e6] inline-block tracking-widest">
+        <h2 className="text-[#dee2e6] text-sm font-black mb-6 pb-1 border-b border-[#dee2e6] inline-block tracking-widest">
           INTERESTS
         </h2>
 

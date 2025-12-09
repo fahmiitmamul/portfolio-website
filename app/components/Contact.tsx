@@ -14,7 +14,7 @@ export default function Contact() {
   return (
     <div className="px-4 sm:px-8 md:px-16 lg:px-48 py-4 font-opensans">
       <div>
-        <h2 className="text-[#dee2e6] text-lg sm:text-xl font-small mb-6 pb-3 border-b border-[#ffffff] inline-block tracking-widest">
+        <h2 className="text-[#dee2e6] text-sm font-black mb-6 pb-1 border-b border-[#ffffff] inline-block tracking-widest">
           CONTACT
         </h2>
 

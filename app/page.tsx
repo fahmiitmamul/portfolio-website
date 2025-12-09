@@ -86,7 +86,7 @@ export default function Home() {
           </div>
         </div>
 
-        <nav className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-10 mt-8 text-[#dee2e6] font-medium text-sm sm:text-base md:text-lg font-raleway">
+        <nav className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-10 mt-8 text-[#dee2e6] font-black text-sm sm:text-base md:text-lg font-raleway">
           <Link
             href="/"
             className={`home-link ${

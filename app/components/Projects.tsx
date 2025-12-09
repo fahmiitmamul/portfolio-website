@@ -72,7 +72,7 @@ export default function Projects() {
   return (
     <div className="px-4 sm:px-6 md:px-12 lg:px-24 xl:px-48 py-4 font-opensans">
       <div>
-        <h2 className="text-[#dee2e6] text-lg sm:text-xl font-small mb-6 pb-3 border-b border-[#ffffff] inline-block tracking-widest">
+        <h2 className="text-[#dee2e6] text-sm font-black mb-6 pb-1 border-b border-[#ffffff] inline-block tracking-widest">
           PROJECTS
         </h2>
 
@@ -81,7 +81,7 @@ export default function Projects() {
             <button
               key={category}
               onClick={() => setActiveFilter(category)}
-              className={`px-4 sm:px-6 py-2 rounded font-medium transition text-sm sm:text-base ${
+              className={`px-4 sm:px-6 py-2 rounded font-black transition text-sm sm:text-base cursor-pointer ${
                 activeFilter === category
                   ? "bg-[#1c7d32] text-[#dee2e6]"
                   : "bg-[#1b2732] text-[#dee2e6] hover:bg-[#3a4a5a]"

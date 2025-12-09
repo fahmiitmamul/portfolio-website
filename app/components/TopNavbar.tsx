@@ -137,7 +137,7 @@ export default function TopNavbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`nav-link ${
+              className={`nav-link font-black ${
                 isActive(link.href)
                   ? "active text-[#12d640]"
                   : "text-[#dee2e6] hover:text-[#12d640]"

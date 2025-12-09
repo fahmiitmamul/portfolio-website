@@ -101,7 +101,7 @@ export default function Skills() {
   return (
     <div className="px-4 sm:px-6 md:px-12 lg:px-24 xl:px-48 py-4 font-opensans">
       <div>
-        <h2 className="text-[#dee2e6] text-lg sm:text-xl md:text-2xl font-small mb-6 pb-3 border-b border-[#ffffff] inline-block tracking-widest">
+        <h2 className="text-[#dee2e6] text-sm font-black mb-6 pb-1 border-b border-[#ffffff] inline-block tracking-widest">
           SKILLS
         </h2>
 
